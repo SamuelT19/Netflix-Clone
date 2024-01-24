@@ -1,0 +1,32 @@
+.header_outer_container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  height: 70px;
+}
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 91%;
+  margin: auto;
+}
+.header_left ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_left ul li {
+  margin-right: 15px;
+}
+.header_right ul {
+  display: flex;
+}
+.header_right ul li {
+  margin-right: 10px;
+}
