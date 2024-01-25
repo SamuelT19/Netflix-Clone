@@ -1,0 +1,42 @@
+.banner_container {
+  height: 60vh;
+}
+.banner_img {
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+.banner_text {
+  position: relative;
+  width: 40%;
+  top: 30vh;
+  left: 5%;
+  color: seashell;
+  text-shadow: 2px 2px 2px black;
+}
+.name {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.banner_link {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin: 10px 0;
+}
+.link {
+  background-color: rgba(222, 219, 214,0.7);
+  border: 1px rgb(171, 169, 169) solid;
+  border-radius: 10px;
+  padding: 5px 30px;
+}
+.link p {
+  font-size: 25px;
+  color: black;
+  font-weight: 700;
+  text-shadow: none;
+}
+.overview {
+  font-size: 18px;
+  font-weight: 500;
+}
