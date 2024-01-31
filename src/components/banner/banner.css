@@ -1,7 +1,8 @@
 .banner_container {
-  height: 60vh;
+  height: 70vh;
 }
 .banner_img {
+  position: relative;
   background-position: center;
   height: 100%;
   width: 100%;
@@ -9,13 +10,13 @@
 .banner_text {
   position: relative;
   width: 40%;
-  top: 30vh;
+  top: 25vh;
   left: 5%;
   color: seashell;
   text-shadow: 2px 2px 2px black;
 }
-.name {
-  font-size: 30px;
+.banner_title {
+  font-size: 40px;
   font-weight: bolder;
 }
 .banner_link {
@@ -25,18 +26,44 @@
   margin: 10px 0;
 }
 .link {
-  background-color: rgba(222, 219, 214,0.7);
-  border: 1px rgb(171, 169, 169) solid;
-  border-radius: 10px;
-  padding: 5px 30px;
+  display: flex;
+  border-radius: 20px;
+  padding: 5px 20px;
+  cursor: pointer;
 }
 .link p {
-  font-size: 25px;
-  color: black;
+  font-size: 20px;
   font-weight: 700;
   text-shadow: none;
+  padding-top: 7px;
 }
+.play{
+  background-color: rgba(255, 255, 255);
+  color: black;
+}
+.info{
+  color: aliceblue;
+  background-color: rgba(27, 26, 26, 0.637);
+}
+
 .overview {
   font-size: 18px;
   font-weight: 500;
+}
+.gradient{
+  height: 35%;
+  width: 100%;
+  position: absolute;
+bottom: 0;
+ background: linear-gradient(
+    to top,
+    rgb(0, 0, 0), 
+    transparent
+  );
+}
+
+@media screen and (max-width: 700px) {
+  .overview{
+display: none;
+  }
 }

@@ -7,6 +7,7 @@
   background-color: rgb(0, 0, 0);
   color: aliceblue;
   height: 70px;
+  z-index: 10;
 }
 .header_container {
   display: flex;
@@ -22,11 +23,24 @@
   align-items: center;
 }
 .header_left ul li {
-  margin-right: 15px;
+  margin-left: 15px;
 }
 .header_right ul {
   display: flex;
+  margin-right: 20px;
 }
 .header_right ul li {
-  margin-right: 10px;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 830px) {
+  .header_left{
+    display: none;
+  }
+  .header_container{
+    display: block;
+  }
+  .header_right{
+    padding-left: 55%;
+  }
 }

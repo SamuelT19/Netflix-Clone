@@ -1,25 +1,21 @@
 import React from "react";
-
-import netflixLogo from "../../assets/images/netflixLogo.png";
-
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-
+import netflixLogo from "../../assets/images/netflixLogo.png";
 import "./header.css";
 
 function Header() {
   return (
     <>
       <div className="header_outer_container">
+        <div style={{ marginLeft: "30px" }}>
+          <img src={netflixLogo} alt="netflix-logo" width={100} />
+        </div>
         <div className="header_container">
           <div className="header_left">
             <ul>
-              <li>
-                <img src={netflixLogo} alt="netflix-logo" width={100} />
-              </li>
-              <li>Netfix</li>
               <li>Home</li>
               <li>TVShows</li>
               <li>Movies</li>
