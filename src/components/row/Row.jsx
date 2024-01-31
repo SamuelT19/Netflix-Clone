@@ -6,7 +6,6 @@ import YouTube from "react-youtube";
 import ClearRoundedIcon from "@mui/icons-material/ClearRounded";
 import "./row.css";
 
-
 function Row({ title, addr, isLarge }) {
   const [poster, setPoster] = useState([]);
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -41,7 +40,7 @@ function Row({ title, addr, isLarge }) {
   };
 
   const a = (p) => {
-    const trailer = movieTrailer(`${p.name || p.original_title}`)
+    movieTrailer(`${p.name || p.original_title}`)
       .then((e) => {
         const vidId = e?.slice(32);
         setMoviesname(vidId);
@@ -79,20 +78,22 @@ function Row({ title, addr, isLarge }) {
             );
           })}
         </div>
-        {scrollPosition > 0 && (
+        <div className="arrow_hide">
+          {scrollPosition > 0 && (
+            <button
+              className={`arrow left ${isLarge && "arrow2"}`}
+              onClick={() => handleScroll("left")}
+            >
+              &lt;
+            </button>
+          )}
           <button
-            className={`arrow left ${isLarge && "arrow2"}`}
-            onClick={() => handleScroll("left")}
+            className={`arrow right ${isLarge && "arrow2"}`}
+            onClick={() => handleScroll("right")}
           >
-            &lt;
+            &gt;
           </button>
-        )}
-        <button
-          className={`arrow right ${isLarge && "arrow2"}`}
-          onClick={() => handleScroll("right")}
-        >
-          &gt;
-        </button>
+        </div>
         <>
           {moviesName && (
             <div className="w">

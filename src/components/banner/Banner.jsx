@@ -12,7 +12,6 @@ function Banner() {
         const res = await instance.get(movieReq.originals);
         const randomMovie =
           res?.data.results[Math.floor(Math.random() * res.data.results.length)];
-        console.log(randomMovie);
         setMovie(randomMovie);
       } catch (e) {
         console.log("error", e);

@@ -40,7 +40,12 @@
   .header_container{
     display: block;
   }
-  .header_right{
+  .header_right {
+    padding-left: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+   .header_right {
     padding-left: 55%;
   }
 }
