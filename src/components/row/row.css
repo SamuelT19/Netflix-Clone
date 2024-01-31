@@ -1,0 +1,107 @@
+:root {
+  --img-height: 350px;
+}
+
+.main_container{
+   background-color: rgb(0, 0, 0);
+    padding:0px 0px 10px 15px  ; 
+}
+.title {
+  font-size: 30px;
+  font-weight: 800;
+  font-style: oblique;
+}
+
+.genres_container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.genre_title {
+   font-family: "Cute Font", sans-serif;
+  font-size: 55px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.movie_container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.movie_container::-webkit-scrollbar {
+  display: none;
+}
+
+.backdrop{
+  margin-right: 20px;
+  width: 300px;
+  height: var(--img-height);
+}
+.poster{
+  margin-right: 20px;
+  width: 250px;
+  height: 200px;
+}
+
+
+
+/* scroll arrow */
+
+.arrow {
+  position: absolute;
+   top: calc((var(--img-height) + 65px) / 2);
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: larger;
+}
+.arrow2{
+   top: calc((var(--img-height) + 210px) / 2);
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.arrow.left {
+  left: 15px;
+}
+
+.arrow.right {
+  right: 15px;
+}
+
+.trailer {
+    display: inline-block;
+  margin:20px auto;
+}
+
+.w{
+  position: relative;
+}
+.letter-x {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 700px;
+    top: 25px;
+    cursor: pointer;
+}
+.no_trailer{
+color: red;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: 700;
+  font-size: 30px;
+  font-style: italic;
+  padding: 20px 0px 5px 20px;
+}
