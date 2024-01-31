@@ -21,7 +21,7 @@ function Banner() {
   const bannerStyle = {
     
     backgroundSize: `cover`,
-    backgroundPosition: `initial`,
+    backgroundPosition: `center`,
     backgroundRepeat: `no-repeat`,
     backgroundImage: `url('https://image.tmdb.org/t/p/original/${movie.backdrop_path}')`
   };
