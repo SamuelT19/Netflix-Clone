@@ -1,7 +1,8 @@
-import React from "react";
-import Row from "./Row";
+import React, { Suspense, lazy } from "react";
 import request from "../../utils/request";
+import LoadingSpinner from "../LoadingSpinner";
 
+const Row = lazy(()=>import('./Row'))
 
 function RowList() {
   const rows = [
@@ -18,7 +19,14 @@ function RowList() {
     <>
       <div className="main_container">
         {rows.map((row, index) => (
-          <Row key={index} title={row.title} addr={row.addr} isLarge={row.isLarge}/>
+          <Suspense key={index} fallback={<LoadingSpinner />}>
+            <Row
+              key={index}
+              title={row.title}
+              addr={row.addr}
+              isLarge={row.isLarge}
+            />
+          </Suspense>
         ))}
       </div>
     </>
