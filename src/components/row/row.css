@@ -36,11 +36,13 @@
   margin-right: 20px;
   width: 300px;
   height: var(--img-height);
+  cursor: pointer;
 }
 .poster {
   margin-right: 20px;
   width: 250px;
   height: 200px;
+  cursor: pointer;
 }
 
 /* scroll arrow */
